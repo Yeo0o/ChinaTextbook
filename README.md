@@ -78,14 +78,18 @@
 ### 解决方法2（使用系统自带的命令合并）
 如果不想使用程序合并，也可以使用系统自带的命令行工具进行合并。
 
-Windows 系统打开CMD或者Windows Terminal的命令：
+Windows 系统打开CMD或者Windows Terminal 使用命令：
 ``` 
 copy /b "文件名1" + "文件名2" "合并后的文件名" 
 ```
+MacOS 或 Linux 系统打开终端使用命令：
+```
+cat "文件名1" "文件名2" > "合并后的文件名"
+```
 ### 例如：
 ```
- copy /b "高等数学 第7版 上册 同济大学.pdf.1" + "高等数学 第7版 上册 同济大学.pdf.2" "高等数学 第7版 上册 同济大学.pdf" 
- ```
+copy /b "高等数学 第7版 上册 同济大学.pdf.1" + "高等数学 第7版 上册 同济大学.pdf.2" "高等数学 第7版 上册 同济大学.pdf" 
+```
 ## 重新下载
 
 - 如果您位于内地，并且网络不错，想重新下载，您可以使用 [tchMaterial-parser](https://github.com/happycola233/tchMaterial-parser) 项目（鼓励开源），进行重新下载。
